@@ -11,13 +11,18 @@ form
 		&:focus
 			outline: none
 
-	input[type="text"]
+	input[type="text"],
+	input[type="email"]
+		font-family: $primaryFont
+		font-size: 2rem
 
 	input[type="submit"]
 		background: $mcDarkBlue
 		color: #fff
+		cursor: pointer
 		font-family: "Chewy"
 		margin-top: 2rem
+		transition: all .15s ease
 
 		&:hover
 			background: $mcBlue

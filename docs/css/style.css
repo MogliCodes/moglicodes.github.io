@@ -2662,11 +2662,19 @@ form {
     border-radius: 25px; }
     form input:focus {
       outline: none; }
+  form input[type="text"],
+  form input[type="email"] {
+    font-family: "Merriweather", serif;
+    font-size: 2rem; }
   form input[type="submit"] {
     background: #063144;
     color: #fff;
+    cursor: pointer;
     font-family: "Chewy";
-    margin-top: 2rem; }
+    margin-top: 2rem;
+    -webkit-transition: all .15s ease;
+    -o-transition: all .15s ease;
+    transition: all .15s ease; }
     form input[type="submit"]:hover {
       background: #3696cc; }
 
@@ -2707,6 +2715,21 @@ header {
     border-radius: 25px; }
     header .navToggle:focus {
       outline: none; }
+
+footer {
+  text-align: center; }
+  footer nav {
+    padding: 2rem; }
+    footer nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none; }
+    footer nav li {
+      display: inline-block; }
+    footer nav a {
+      color: #333;
+      font-weight: bold;
+      text-decoration: none; }
 
 #start {
   display: -webkit-box;
