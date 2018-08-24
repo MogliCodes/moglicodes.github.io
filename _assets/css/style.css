@@ -150,6 +150,7 @@ body {
   -webkit-animation-name: bounce;
   animation-name: bounce;
   -webkit-transform-origin: center bottom;
+  -ms-transform-origin: center bottom;
   transform-origin: center bottom; }
 
 @-webkit-keyframes flash {
@@ -375,6 +376,7 @@ body {
 
 .swing {
   -webkit-transform-origin: top center;
+  -ms-transform-origin: top center;
   transform-origin: top center;
   -webkit-animation-name: swing;
   animation-name: swing; }
@@ -540,6 +542,7 @@ body {
   -webkit-animation-name: jello;
   animation-name: jello;
   -webkit-transform-origin: center;
+  -ms-transform-origin: center;
   transform-origin: center; }
 
 @-webkit-keyframes bounceIn {
@@ -2615,6 +2618,7 @@ body {
       background: #063144; }
     #scrollspies li:hover span {
       -webkit-transform: scale(1);
+      -ms-transform: scale(1);
       transform: scale(1); }
   #scrollspies a {
     display: block; }
@@ -2633,10 +2637,13 @@ body {
     top: -6px;
     border-radius: 25px;
     -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
     transition: all .3s ease;
     -webkit-transform: scale(0);
+    -ms-transform: scale(0);
     transform: scale(0);
     -webkit-transform-origin: right center;
+    -ms-transform-origin: right center;
     transform-origin: right center; }
 
 form input {
@@ -2656,121 +2663,3 @@ form input[type="submit"] {
   font-family: "Chewy"; }
   form input[type="submit"]:hover {
     background: #3696cc; }
-
-header {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  text-align: center;
-  padding: 10px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 999; }
-  header .navToggle {
-    background: #fff;
-    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
-    padding: .5em 1em;
-    color: #333;
-    font-family: "Chewy";
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    font-size: 15px;
-    border: 0;
-    display: inline-block;
-    padding: .25em .75em;
-    border-radius: 25px; }
-    header .navToggle:focus {
-      outline: none; }
-
-#start {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-top: 0;
-  min-height: 100vh; }
-  #start .logo {
-    width: 420px; }
-    #start .logo img {
-      width: 100%; }
-
-#about,
-#wer {
-  text-align: center; }
-  #about .container,
-  #wer .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    max-width: 700px;
-    margin: 0 auto; }
-  #about .headlineBox,
-  #wer .headlineBox {
-    position: relative; }
-  #about .headlineBg,
-  #wer .headlineBg {
-    display: none;
-    position: absolute;
-    top: -5%;
-    left: -10%;
-    width: 120%;
-    z-index: -1; }
-
-#video {
-  padding: 15% 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
-
-#platforms {
-  padding: 20vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
-  #platforms .icons {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 1rem; }
-    #platforms .icons li {
-      display: inline-block;
-      padding: 2rem;
-      -webkit-transition: -webkit-transform .35s ease;
-      transition: -webkit-transform .35s ease;
-      transition: transform .35s ease;
-      transition: transform .35s ease, -webkit-transform .35s ease; }
-      #platforms .icons li:hover {
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2); }
-
-#newsletter {
-  padding: 20vh;
-  text-align: center; }
-  #newsletter .container {
-    max-width: 700px;
-    margin: 0 auto; }
