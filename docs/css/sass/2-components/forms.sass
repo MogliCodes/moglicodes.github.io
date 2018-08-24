@@ -1,4 +1,6 @@
 form
+	max-width: 320px
+	margin: 0 auto
 	input
 		box-sizing: border-box
 		font-size: 24px
@@ -8,12 +10,28 @@ form
 		border-radius: 25px
 		&:focus
 			outline: none
-	
+
 	input[type="text"]
 
-	input[type="submit"]	
+	input[type="submit"]
 		background: $mcDarkBlue
 		color: #fff
 		font-family: "Chewy"
+		margin-top: 2rem
+
 		&:hover
 			background: $mcBlue
+
+.mc-field-group
+	label,
+	input
+		display: block
+		width: 100%
+
+	label
+		text-align: left
+		padding: .5em 0 0 01em
+
+
+.indicates-required
+	font-size: 1.2rem

@@ -15,35 +15,40 @@
 
 	li
 		display: block
-		background: #fff
-		width: 25px
-		height: 25px
-		border-radius: 50%
-		margin: 20px
 		position: relative
-		text-align: right
-		&:first-of-type
-			background: $mcDarkBlue
+
 		&:hover
-			span
-				transform: scale(1)
+			span:first-of-type
+				transform: scale(1) translateX(-50px) !important
 	a
 		display: block
-
 	span
+		display: inline-block
+
+	span:first-of-type
 		font-size: 16px
 		font-weight: bold
 		font-family: "Chewy"
 		text-decoration: none
 		color: #333
 		background: white
-		position: absolute
-		left: calc(-100% - 50px)
 		text-align: right
-		display: block
 		padding: .5em 1em
+		position: absolute
+		right: 0
 		top: -6px
 		border-radius: 25px
 		transition: all .3s ease
-		transform: scale(0)
-		transform-origin: right center
+		transform: scale(0) translateX(-50px) !important
+		transform-origin: center
+
+	span.circle
+		background: #fff
+		content: ""
+		display: block
+		width: 25px
+		height: 25px
+		border-radius: 50%
+		margin: 20px
+		position: relative
+		text-align: right
