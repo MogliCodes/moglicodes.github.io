@@ -7,9 +7,9 @@ $(document).ready(function(){
 	$(".menuButton").on("click", function(){
 		anime({
 			targets: '.menuButton',
-			width: 100%,
-			height: 100%,
-			borderRadius: 0,
+			width: '100%',
+			height: '100%',
+			borderRadius: '0',
 			backgroundColor: '#FFF',
 			easing: 'easeInOutQuad'
 		});
