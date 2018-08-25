@@ -3,11 +3,18 @@ body {
   padding: 0;
   border: 0; }
 
+img {
+  max-width: 100%;
+  height: auto; }
+
 figure {
   margin: 0.1; }
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 440px) {
+    html {
+      font-size: 50%; } }
 
 body {
   -webkit-font-smoothing: antialiased;
@@ -23,6 +30,10 @@ h1 {
   display: inline-block;
   text-align: center;
   line-height: 1; }
+  @media (max-width: 440px) {
+    h1 {
+      font-size: 4.8rem;
+      margin-bottom: 4rem; } }
 
 p {
   font-size: 2.4rem;
@@ -111,7 +122,12 @@ body {
   background-attachment: fixed; }
   @media (max-width: 440px) {
     body {
-      background-image: url("../img/bgPflanzenMobile.png"); } }
+      background-image: none; } }
+
+.container {
+  width: 85%;
+  max-width: 1440px;
+  margin: 0 auto; }
 
 .panel {
   -webkit-box-sizing: border-box;
@@ -2642,6 +2658,9 @@ body {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end; }
+  @media (max-width: 440px) {
+    #scrollspies {
+      display: none; } }
   #scrollspies ul {
     padding: 0;
     margin: 0; }
@@ -2830,7 +2849,6 @@ footer {
   justify-content: center; }
 
 #platforms {
-  padding: 20vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2857,10 +2875,24 @@ footer {
         -webkit-transform: scale(1.2);
         -ms-transform: scale(1.2);
         transform: scale(1.2); }
+      @media (max-width: 440px) {
+        #platforms .icons li img {
+          max-width: 50px; } }
 
 #newsletter {
-  padding: 20vh;
   text-align: center; }
   #newsletter .container {
     max-width: 700px;
     margin: 0 auto; }
+
+.bgImageIos {
+  display: none; }
+  @media (max-width: 440px) {
+    .bgImageIos {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1; } }
