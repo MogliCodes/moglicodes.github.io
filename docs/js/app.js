@@ -2,11 +2,18 @@ $(document).ready(function(){
 
 
 	/*
-	 * SNAP svg
+	 * ANIME.JS
 	 */
-	 var svg = Snap("#animatedSVG");
-
-
+	$(".menuButton").on("click", function(){
+		anime({
+			targets: '.menuButton',
+			width: 100%,
+			height: 100%,
+			borderRadius: 0,
+			backgroundColor: '#FFF',
+			easing: 'easeInOutQuad'
+		});
+	});
 
 
 
