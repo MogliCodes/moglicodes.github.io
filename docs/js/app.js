@@ -1,18 +1,28 @@
 $(document).ready(function(){
 
+
+	/*
+	 * SNAP svg
+	 */
+	 var svg = Snap("#animatedSVG");
+
+
+
+
+
+
+
+
+
 	console.log("Hello from app.js")
 	$(window).on("scroll", function(){
 		var window = $(this);
 		var scrollTop = window.scrollTop();
 		var logo = $(".logo");
 		var animatedOffset = 1 - scrollTop/2
-
-		//$(".logo").attr("style", "width: calc(420px - " + scrollTop*1.5 + "px);");
-    	//$(".logo img").css("opacity", 1 - $(window).scrollTop() / 500);
 		console.log(scrollTop);
 	});
 
-	$.stellar();
 
 
 
