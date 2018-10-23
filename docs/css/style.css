@@ -2864,6 +2864,9 @@ footer {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center; }
+  #video iframe {
+    -webkit-box-shadow: 0 0 60px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.25); }
 
 #platforms {
   display: -webkit-box;
