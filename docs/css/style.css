@@ -2866,10 +2866,12 @@ footer {
       width: 100%; }
 
 #about,
-#wer {
+#wer,
+#video {
   text-align: center; }
   #about .container,
-  #wer .container {
+  #wer .container,
+  #video .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2886,10 +2888,12 @@ footer {
     max-width: 700px;
     margin: 0 auto; }
   #about .headlineBox,
-  #wer .headlineBox {
+  #wer .headlineBox,
+  #video .headlineBox {
     position: relative; }
   #about .headlineBg,
-  #wer .headlineBg {
+  #wer .headlineBg,
+  #video .headlineBg {
     display: none;
     position: absolute;
     top: -5%;
