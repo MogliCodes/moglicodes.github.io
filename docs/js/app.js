@@ -4,7 +4,8 @@ $(document).ready(function(){
 
 	const menuPanels = document.querySelectorAll(".menu-panel")
 	const scrollspiesList = document.querySelector("#scrollspies ul")
-	const scrollspies = document.querySelectorAll("#scrollspies li")
+	console.log(menuPanels)
+
 
 	menuPanels.forEach(element => {
 		let listItem = document.createElement("li")
@@ -20,6 +21,8 @@ $(document).ready(function(){
 		scrollspiesList.append(listItem)
 	})
 
+	const scrollspies = document.querySelectorAll("#scrollspies li")
+	console.log(scrollspies)
 	window.addEventListener('scroll', () => {
 		menuPanels.forEach( (panel, index) => {
 
@@ -34,6 +37,7 @@ $(document).ready(function(){
 				panel.classList.remove("active")
 				scrollspies[index].classList.remove("active")
 			}
+
 		})
 	})
 
